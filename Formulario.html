@@ -1,0 +1,26 @@
+<html>
+   <head>
+       <title>Formularios</title>
+   </head>
+   <body>
+        <h3></h3>
+                <br><!--renglon siguiente -->
+                <form action="./Index.html" method="post">  <!--es una Funcion con parametros -->
+                    <label for="name">User</label><!--etiqueta-->
+                    <br>
+                    <input type="text" id="name" name="name" /><!--se le asigna un id a una etiqueta-->
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" name="password" />
+                    <br>
+                    <button type="button" class="btn btn-danger" onclick="Login();">Login</button>   
+                    <button type="button" class="btn btn-danger">Cancel</button>       
+                 </form>   
+                 <script>
+                     function Login(){
+                         document.location = "./Index.html";
+                     }
+                 </script>  
+   </body>
+</html>
